@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ionic</artifactId>
-    <version>0.9.22-alpha-SNAPSHOT</version>
+    <version>0.9.24-SNAPSHOT</version>
     <name>Ionic</name>
     <description>WebJar for Ionic</description>
     <url>http://webjars.org</url>
@@ -41,7 +41,7 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>0.9.21-alpha</upstream.version>
+        <upstream.version>0.9.24</upstream.version>
         <upstream.url>https://github.com/driftyco/ionic/archive</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
@@ -88,7 +88,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/ionic-${upstream.version}/dist" excludes="js/angular-ui/ js/angular/" />
+                                    <fileset dir="${project.build.directory}/ionic-${upstream.version}/release" />
                                 </move>
                             </target>
                         </configuration>
