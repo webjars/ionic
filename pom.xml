@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ionic</artifactId>
-    <version>1.0.0-beta.14-SNAPSHOT</version>
+    <version>1.0.0-beta.14</version>
     <name>Ionic</name>
     <description>WebJar for Ionic</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/ionic</url>
         <connection>scm:git:https://github.com/webjars/ionic.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/ionic.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ionic-1.0.0-beta.14</tag>
     </scm>
     
     <properties>
