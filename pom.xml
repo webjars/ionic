@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ionic</artifactId>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>1.1.0</version>
     <name>Ionic</name>
     <description>WebJar for Ionic</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/ionic</url>
         <connection>scm:git:https://github.com/webjars/ionic.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/ionic.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ionic-1.1.0</tag>
     </scm>
     
     <properties>
@@ -95,11 +95,11 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/ionic-${upstream.version}"/>
-                                <echo message="moving resources"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/ionic-${upstream.version}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/ionic-${upstream.version}" excludes="js/angular-ui/ js/angular/"/>
+                                    <fileset dir="${project.build.directory}/ionic-${upstream.version}" excludes="js/angular-ui/ js/angular/" />
                                 </move>
                             </target>
                         </configuration>
